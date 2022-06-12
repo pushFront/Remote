@@ -18,9 +18,17 @@ public class Program {
 		List<Aluguel> list = new ArrayList<>();
 		
 		for(int i = 0; i < n; i++) {
+			
 			System.out.print("\nEnter with a ID: ");
 			int id = sc.nextInt();
 			sc.nextLine();
+			
+			while(hasId(list, id) != false) {
+				System.out.print("This id already exist, try another one: ");
+				id = sc.nextInt();
+				sc.nextLine();
+			}
+			
 			System.out.print("Enter with your name: ");
 			String name = sc.nextLine();
 			System.out.print("Enter with yout email: ");
@@ -36,6 +44,11 @@ public class Program {
 		
 		sc.close();
 
+	}
+	
+	public static boolean hasId(List<Aluguel> list, int id) {
+		Aluguel aux = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+		return aux != null ? true : false;
 	}
 
 }
