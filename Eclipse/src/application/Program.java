@@ -31,9 +31,25 @@ public class Program {
 			
 			System.out.print("Enter with your name: ");
 			String name = sc.nextLine();
-			System.out.print("Enter with yout email: ");
+			System.out.print("Enter with your email: ");
 			String email = sc.nextLine();
-			list.add(new Aluguel(id, name, email));
+			System.out.print("Do you want to register your phone number? (y/n) ");
+			char aux = sc.next().charAt(0);
+			
+			while(aux != 'y' && aux != 'n') {
+				System.out.print("Please, just replay yes or no: (y/n) ");
+				aux = sc.next().charAt(0);
+			}
+			
+			if(aux == 'y') {
+				System.out.print("Enter with your phone number: ");
+				int phone = sc.nextInt();
+				list.add(new Aluguel(id, name, email, phone));
+			}
+			
+			else if(aux == 'n'){
+				list.add(new Aluguel(id, name, email));
+			}
 		}
 		
 		System.out.println();
