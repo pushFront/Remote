@@ -5,7 +5,7 @@ package entities;
  * @Diagram_UML
  * 
  * **************************************
- * *			 Aluguel                *  <--- Class name
+ * *             Aluguel                *  <--- Class name
  * **************************************
  * *          + Id : Integer            *         
  * *          + Name : String           *  <--- Class attributes
