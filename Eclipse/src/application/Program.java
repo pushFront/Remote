@@ -1,3 +1,8 @@
+/**
+ * @author Rian Lima
+ * @date   7.13.22
+ */
+
 package application;
 
 import java.util.ArrayList;

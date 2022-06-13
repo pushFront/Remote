@@ -1,5 +1,20 @@
 package entities;
 
+/**
+ * 
+ * @Diagram_UML
+ * 
+ * **************************************
+ * *			 Aluguel                *  <--- Class name
+ * **************************************
+ * *          + Id : Integer            *         
+ * *          + Name : String           *  <--- Class attributes
+ * *          + Email : String          *
+ * *          + Phone : Integer         *
+ * **************************************
+ * 
+ */
+
 public class Aluguel {
 	private Integer id;
 	private String name;
