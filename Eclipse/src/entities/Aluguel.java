@@ -33,7 +33,9 @@ public class Aluguel {
 
 	@Override
 	public String toString() {
-		return "Aluguel [id=" + id + ", name=" + name + ", email=" + email + "]";
+		return "Data about cliente: " + name + "\n"
+			+ "ID...: " + id + "\n"
+			+ "Email: " + email + "\n";
 	}
 	
 }
